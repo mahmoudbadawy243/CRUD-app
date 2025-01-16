@@ -24,10 +24,11 @@ function totally() {
 // add product =====================================================================================================================
 
 let arrayOfProduct;
+
 if (localStorage.product) {
   arrayOfProduct = JSON.parse(localStorage.product);
 } else {
-  arrayOfProduct = [];
+  arrayOfProduct = [constArrayOfProduct];
 }
 
 creat.onclick = function () {
@@ -101,6 +102,12 @@ function display() {
   totally();
 }
 display();
+
+
+
+
+
+
 
 // Delete ======================================================================================================================================
 
